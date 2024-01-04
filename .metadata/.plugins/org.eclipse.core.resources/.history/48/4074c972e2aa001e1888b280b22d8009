@@ -1,0 +1,15 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class UnitTest {
+
+	@Test
+	void test() {
+		Calc c1 = new Calc();
+		c1.setValue(7, 3);
+		c1.add();
+		assertEquals(7,c1.showResult());
+	}
+
+}

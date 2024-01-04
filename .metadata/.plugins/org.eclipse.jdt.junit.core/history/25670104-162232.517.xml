@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UnitTest" project="BasicUnitTest" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="UnitTest" time="0.02" uniqueid="[engine:junit-jupiter]/[class:UnitTest]">
+    <testcase name="testAdd" classname="UnitTest" time="0.019" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:UnitTest]/[method:testAdd()]">
+      <failure>
+        <expected>7.0</expected>
+        <actual>10.0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;7.0&gt; but was: &lt;10.0&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:102)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:97)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:735)&#13;
+	at UnitTest.testAdd(UnitTest.java:12)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)&#13;
+&#13;
+
+      </failure>
+    </testcase>
+    <testcase name="testMultiply" classname="UnitTest" time="0.0" displayname="testMultiply()" uniqueid="[engine:junit-jupiter]/[class:UnitTest]/[method:testMultiply()]"/>
+  </testsuite>
+</testrun>
