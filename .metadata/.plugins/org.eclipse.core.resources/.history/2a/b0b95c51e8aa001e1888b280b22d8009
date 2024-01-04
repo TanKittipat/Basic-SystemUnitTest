@@ -18,7 +18,7 @@ class TestGG {
         driver.get("https://www.google.co.th/?hl=th");
         
         WebElement search_box = driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
-        search_box.sendKeys("npru");
+        search_box.sendKeys("NPRU");
         search_box.sendKeys(Keys.ENTER);    
         
         String result = driver.findElement(By.className("VuuXrf")).getText();
@@ -37,12 +37,12 @@ class TestGG {
         driver.get("https://www.google.co.th/?hl=th");
         
         WebElement search_box = driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
-        search_box.sendKeys("kru");
+        search_box.sendKeys("NPRU");
         search_box.sendKeys(Keys.ENTER);    
         
         String result = driver.findElement(By.className("VuuXrf")).getText();
         System.out.println("Result : " + result);
-        assertEquals("Kanchanaburi Rajabhat University", result);
+        assertEquals("มหาวิทยาลัยราชภัฏกาญจนบุรี", result);
         
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.close();

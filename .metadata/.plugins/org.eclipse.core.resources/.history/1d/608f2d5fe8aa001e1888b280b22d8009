@@ -18,7 +18,7 @@ class TestGG {
         driver.get("https://www.google.co.th/?hl=th");
         
         WebElement search_box = driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
-        search_box.sendKeys("npru");
+        search_box.sendKeys("NPRU");
         search_box.sendKeys(Keys.ENTER);    
         
         String result = driver.findElement(By.className("VuuXrf")).getText();

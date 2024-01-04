@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestGG" project="SystemTestWithUnit" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="TestGG" time="7.17" uniqueid="[engine:junit-jupiter]/[class:TestGG]">
+    <testcase name="testSearchByKeyword1" classname="TestGG" time="3.955" displayname="testSearchByKeyword1()" uniqueid="[engine:junit-jupiter]/[class:TestGG]/[method:testSearchByKeyword1()]"/>
+    <testcase name="testSearchByKeyword2" classname="TestGG" time="3.215" displayname="testSearchByKeyword2()" uniqueid="[engine:junit-jupiter]/[class:TestGG]/[method:testSearchByKeyword2()]"/>
+  </testsuite>
+</testrun>
