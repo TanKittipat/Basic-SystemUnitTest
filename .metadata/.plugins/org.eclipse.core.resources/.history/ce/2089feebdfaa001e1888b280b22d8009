@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module BasicUnitTest {
-	requires org.junit.jupiter.api;
-}

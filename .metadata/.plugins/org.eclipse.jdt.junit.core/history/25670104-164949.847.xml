@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestGG" project="SystemTestWithUnit" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="TestGG" time="3.594" uniqueid="[engine:junit-jupiter]/[class:TestGG]">
-    <testcase name="testSearchByKeyword" classname="TestGG" time="3.594" displayname="testSearchByKeyword()" uniqueid="[engine:junit-jupiter]/[class:TestGG]/[method:testSearchByKeyword()]"/>
-  </testsuite>
-</testrun>

@@ -1,0 +1,52 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.time.Duration;
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+class TestGG {
+
+	@Test
+	void testSearchByKeyword1() throws Exception {
+        WebDriver driver = null;
+        System.setProperty("webdriver.gecko.driver", "D:\\SeleniumChromeDriver\\geckodriver.exe");
+        driver = new FirefoxDriver();
+        driver.get("https://www.google.co.th/?hl=th");
+        
+        WebElement search_box = driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
+        search_box.sendKeys("npru");
+        search_box.sendKeys(Keys.ENTER);    
+        
+        String result = driver.findElement(By.className("VuuXrf")).getText();
+        System.out.println("Result : " + result);
+        assertEquals("มหาวิทยาลัยราชภัฏนครปฐม", result);
+        
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.close();
+	}
+	
+	@Test
+	void testSearchByKeyword2() throws Exception {
+        WebDriver driver = null;
+        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver-win64\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://www.google.co.th/?hl=th");
+        
+        WebElement search_box = driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
+        search_box.sendKeys("kru");
+        search_box.sendKeys(Keys.ENTER);    
+        
+        String result = driver.findElement(By.className("VuuXrf")).getText();
+        System.out.println("Result : " + result);
+        assertEquals("Kanchanaburi Rajabhat University", result);
+        
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.close();
+	}
+
+}
